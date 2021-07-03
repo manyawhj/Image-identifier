@@ -1,0 +1,78 @@
+
+<html>
+  <head>
+    <title>MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+    <div id="main_div" class="col-xs-12">
+      <h2>Image Identification
+        <img src="mylogo.gif">
+      </h2>
+    </div>
+
+    <div id="webcam" class="col-sx-12 col-sm-6">
+      <label>Webcam view
+        <img src="cam.gif">
+      </label>
+      <div id="camera"></div>
+      <button id="takepic" class="btn btn-info" onclick="Take_snapshot()">Take Snapshot</button>
+    </div>
+
+    <div class="col-sx-12 col-sm-6" id="snap">
+	      <label>Snapshot - 
+          <img src="snapshot.gif" id="img_logo">
+        </label>
+
+        <div id="result"></div>
+
+      <button class="btn btn-success" onclick="check()"> Get Results</button>
+
+        </div>
+       
+        <div class="col-sm-6 col-xs-12 footer_div">
+          <h4 class="col-sm-6 col-xs-12">
+            <img src="bulb.gif" id="bulb">
+            <span id="finalresult"></span>
+          </h4>
+
+        </div>
+
+        <div class="copyright_footer">
+          Developed By- Manya Jha
+        </div>
+    </center>
+
+
+    
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+
